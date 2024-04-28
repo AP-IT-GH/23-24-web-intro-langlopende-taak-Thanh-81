@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerdesk - Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+ 
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md" style="background-color: donkerblauw;">
+  <a class="navbar-brand container-fluid" href="#" style="background-color: transparent"><img src="./assets/Logo1.png" alt="PowerDesk" width="100" height="100">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" aria-current="page" href="index.html" style="color: White">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="diensten.html" style="color: White">Dashboard</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color: White">Info</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="contact.html" style="color: White">Contact</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color: White">Login</a>
+      </li>
+    </ul>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="zoeken voor beginners" aria-label="Search">
+      <button class="btn btn-sm btn-outline-secondary rounded" type="submit" style="color: white; border-color: orange;margin-right: 20px;">zoeken</button>
+    </form>
+  </div>
+</nav>
+
+  <header class="row m-5">
+    <h1 class="col display-2 zwart text-center">PowerDesk for dummies</h1>
+  </header>
+ 
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <section id="contact" class="row">
+          <div class="col-12 mb-3">
+            <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+            <p>Vul het registratieformulier in.<br>Velden met een <span>*</span> zijn verplicht.</p>
+          </div>
+          <hr>
+         
+          <form action="#" method="post">
+            <fieldset class="row g-3 mb-3">
+              <legend class="text-uppercase fs-6 fw-bolder pt-3">gegevens</legend>
+              <div class="col-md-6">
+                <label for="voornaam" class="form-label">voornaam <span>*</span></label>
+                <input type="text" class="form-control" id="voornaam" required>
+              </div>
+              <div class="col-md-6">
+                <label for="achternaam" class="form-label">achternaam <span>*</span></label>
+                <input type="text" class="form-control" id="achternaam" required>
+              </div>
+              <div class="col-6">
+                <label for="telefoon" class="form-label">telefoonnummer</label>
+                <input type="tel" class="form-control" id="telefoon" placeholder="0412 34 56 78">
+              </div>
+              <div class="col-6">
+                <label for="geboortedatum" class="form-label">geboortedatum</label>
+                <input type="date" class="form-control" id="geboortedatum">
+              </div>
+            </fieldset>
+ 
+            <fieldset class="row g-3 mb-3 mt-3">
+              <legend class="text-uppercase fs-6 fw-bolder pt-3">accountgegevens</legend>
+              <div class="col-12">
+                <label for="e-mail" class="form-label">e-mail <span>*</span></label>
+                <input type="e-mail" class="form-control" id="e-mail" required>
+              </div>
+              <div class="col-md-6">
+                <label for="password1" class="form-label">paswoord <span>*</span></label>
+                <input type="password" class="form-control" id="password1"
+                  placeholder="min 8 karakters,1 cijfer, 1 hoofdletter" required>
+              </div>
+              <div class="col-md-6">
+                <label for="password2" class="form-label">bevestig paswoord <span>*</span></label>
+                <input type="password" class="form-control" id="password2" required>
+              </div>
+            </fieldset>
+ 
+            <fieldset class="row g-3 mb-3 mt-3">
+              <legend class="text-uppercase fs-6 fw-bolder pt-3">adresgegevens</legend>
+              <div class="col-12">
+                <label for="address" class="form-label">address <span>*</span></label>
+                <input type="text" class="form-control" id="address" required>
+              </div>
+              <div class="col-6 col-md-3">
+                <label for="postcode" class="form-label">postcode <span>*</span></label>
+                <input type="text" class="form-control" id="postcode" required>
+              </div>
+              <div class="col-6 col-md-5">
+                <label for="stad" class="form-label">stad <span>*</span></label>
+                <input type="text" class="form-control" id="stad" required>
+              </div>
+              <div class="col-md-4">
+                <label for="countryCode" class="form-label">kies een land <span>*</span></label>
+                <select id="countryCode" class="form-select">
+                  <option value="BE" selected>België</option>
+                  <option value="DE">Duitsland</option>
+                  <option value="FR">Frankrijk</option>
+                  <option value="LU">Luxemburg</option>
+                  <option value="LU">Belgie</option>
+                  <option value="NL">Nederland</option>
+                  <option value="UK">Verenigd Koninkrijk</option>
+                </select>
+              </div>
+            </fieldset>
+            <div class="col-6">
+              <label for="role" class="form-label">Selecteer uw rol</label>
+              <select id="role" class="form-select">
+                <option value="Gebruiker" selected>Gebruiker</option>
+                <option value="Admin">Admin</option>
+              </select>
+            </div>
+            <fieldset class="row g-3 mb-3 mt-3">
+              <legend class="text-uppercase fs-6 fw-bolder pt-3">Waar liggen uw problemen</legend>
+              <div class="col-6">
+      <a class="navbar-brand container-fluid" href="#" style="background-color: transparent"><img src="./assets/Logo1.png" alt="PowerDesk" width="100" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#" style="color: White">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: White">Dashboard</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: White">Info</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: White">Contact</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style="color: White">Login</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="zoeken voor beginners" aria-label="Search">
+          <button class="btn btn-sm btn-outline-secondary rounded" type="submit" style="color: white; border-color: orange;margin-right: 20px;">zoeken</button>
+        </form>
+      </div>
+    </nav>
+    <label for="brand" class="form-label">Ik heb hulp nodig over</label>
+                <select id="brand" class="form-select">
+                  <option value="4me">4me</option>
+                  <option value="Bolddesk" selected>Bolddesk</option>
+                  <option value="Freshdesk">Freshdesk</option>
+                  <option value="Geckoboard">Geckoboard</option>
+                  <option value="Jira">Jira</option>
+                  <option value="Metabase">Metabase</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label for="brand" class="form-label">Type van de storing</label>
+                <select id="brand" class="form-select">
+                  <option value="aanvraag" selected>Nieuwe aanvragen</option>
+                  <option value="behandeling">Tickets opvolgen</option>
+                  <option value="afsluiten">Afsluiten van een ticket</option>
+                </select>
+              </div>
+                  
+              <div class="col">
+                <label for="satisfied" class="form-label">hoe tevreden ben je van ons?</label>
+                <input type="range" class="form-range" min="0" max="10" step="1" id="satisfied">
+              </div>
+            </fieldset>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">verzenden</button>
+            </div>
+          </form>
+ 
+        </section>
+        <hr>
+      </main>
+ 
+      <aside class="col-md-3 border-start ps-5">
+        <a class="navbar-brand" href="#"><img src="./assets/Ikke.png" alt="contact@powerdesk.com" width="120" height="160">
+        </a>
+        <h2 class=" text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+          <p>contact@powerdesk.com<br>
+              email : <a href="mailto:chiem-thanh.huynh@ap.be" class="donkerblauw">chiem-thanh.huynh@powerdesk.com</a><br>
+              phone +32 123 / 45 67 89</p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com" target="_blank">
+                <i class="bi bi-youtube blauw fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram blauw fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook blauw fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/" target="_blank">
+                <i class="bi bi-twitter blauw fs-3"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+ 
+    </div>
+  </div>
+</body>
+
+<footer class="container-fluid text-start h6 small p-4"><span>&copy;</span> 2024 Powerdesk</footer>
+
+</html>
