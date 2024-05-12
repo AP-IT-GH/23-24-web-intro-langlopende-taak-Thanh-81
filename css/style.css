@@ -1,22 +1,72 @@
-.donkerblauw{
+.donkerblauw {
     color: #012840;
-  }
+}
 
-.blauw{
+.blauw {
     color: #034959;
 }
 
-.oranje{
-    color: #F25922;
+.lichtblauw {
+    background-color: #8AACE0;
 }
 
-a {
-    color: white;
+.oranje {
+    border-color: #F25922;
 }
+
 
 nav {
     background-color: #034959;
   }
+
 .rood, span{
     color:#FF0000;
+}
+
+/*.back {
+    background-color: aliceblue;
+    width: 98.3%;
+    position: absolute;
+    top: 16%;
+    bottom: 8%;
+  }
+ */ 
+
+.login-center {
+    width: 400px;
+    height: 400px;
+    background-color: #8AACE0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    padding: 1em 2em;
+    border-bottom: 2px solid #ccc;
+    display: table;
+}
+  
+.login-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.login-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.imgContainer1 {
+    align-items: center;
+    max-width:300px;
+    max-height:50%;
+    width: auto;
+    height: auto;
 }
