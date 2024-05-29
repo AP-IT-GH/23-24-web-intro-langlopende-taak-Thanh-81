@@ -13,7 +13,7 @@
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="./css/style.css">
 
-        <!-- LEAFLET -->
+    <!-- LEAFLET -->
     <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -26,7 +26,6 @@
     crossorigin=""></script>
     <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
     <script src="./js/mapScript.js" defer></script>
-
 </head>
 
 <body>
@@ -43,11 +42,18 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold; color: blauw">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="diensten.html" style="font-weight: bold; color: blauw">Dashboard</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#" style="font-weight: bold; color: blauw">Info</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold; color: blauw">
+            Diensten
+          </a>
+          <ul class="dropdown-menu" style="background-color: #8AACE0;">
+            <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+            <li><a class="dropdown-item" href="gebruikers.html">Gebruikers</a></li>
+            <li><a class="dropdown-item" href="klanten.html">Klanten</a></li>
+            <li><a class="dropdown-item" href="tarieven.html">Tarieven</a></li>
+            <li><a class="dropdown-item" href="media.html">Media</a></li>
+            <li><a class="dropdown-item" href="help.html">Help</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="contact.html" style="font-weight: bold; color: blauw">Contact</a>
@@ -161,12 +167,10 @@
 
     <label for="brand" class="form-label">Ik heb hulp nodig over</label>
                 <select id="brand" class="form-select">
-                  <option value="4me">4me</option>
-                  <option value="Bolddesk" selected>Bolddesk</option>
-                  <option value="Freshdesk">Freshdesk</option>
-                  <option value="Geckoboard">Geckoboard</option>
-                  <option value="Jira">Jira</option>
-                  <option value="Metabase">Metabase</option>
+                  <option value="klantenbestand">Klantenbestand</option>
+                  <option value="gebruikers" selected>Gebruikers gegevens</option>
+                  <option value="dashboard">Dashboard</option>
+                  <option value="login">Login</option>
                 </select>
               </div>
               <div class="col-6">
@@ -175,6 +179,7 @@
                   <option value="aanvraag" selected>Nieuwe aanvragen</option>
                   <option value="behandeling">Tickets opvolgen</option>
                   <option value="afsluiten">Afsluiten van een ticket</option>
+                  <option value="andere">Een andere vraag</option>
                 </select>
               </div>
                   
@@ -226,7 +231,7 @@
     </div>
   </div>
 
-  <footer class="container-fluid text-start h6 small p-4"><span>&copy;</span> 2024 Powerdesk</footer>
+  <footer class="container-fluid text-start h6 small p-4"><span>&copy;</span> 2024 PowerDesk - Thanh - G_2SNB_A1</footer>
 </body>
 
 

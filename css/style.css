@@ -6,12 +6,26 @@
     color: #034959;
 }
 
+button {
+    background-color :#034959;
+    color: white;
+}
+
+
 .lichtblauw {
     background-color: #8AACE0;
 }
 
 .oranje {
     border-color: #F25922;
+}
+
+.oranje2 {
+    color: #F25922;
+}
+
+.oranje3 {
+    background-color: #F25922;
 }
 
 
@@ -22,15 +36,6 @@ nav {
 .rood, span{
     color:#FF0000;
 }
-
-/*.back {
-    background-color: aliceblue;
-    width: 98.3%;
-    position: absolute;
-    top: 16%;
-    bottom: 8%;
-  }
- */ 
 
 .login-center {
     width: 400px;
@@ -69,4 +74,23 @@ nav {
     max-height:50%;
     width: auto;
     height: auto;
+}
+
+th {
+    font-size: 20px;
+    color:#F25922;
+}
+
+h5 {
+    color:#F25922; 
+}
+
+rect {
+    background-color: #034959;
+}
+
+h4 {
+    color:#F25922;
+    font-weight: bolder;
+    text-align: left;
 }

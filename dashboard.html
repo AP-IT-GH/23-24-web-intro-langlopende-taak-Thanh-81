@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerdesk - Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar navbar-expand-md lichtblauw">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="background-color: transparent"><img src="./assets/Logo1.png" alt="PowerDesk" width="100" height="100">
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold; color: blauw">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold; color: blauw">
+                Diensten
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                <li><a class="dropdown-item" href="gebruikers.html">Gebruikers</a></li>
+                <li><a class="dropdown-item" href="klanten.html">Klanten</a></li>
+                <li><a class="dropdown-item" href="tarieven.html">Tarieven</a></li>
+                <li><a class="dropdown-item" href="media.html">Media</a></li>
+                <li><a class="dropdown-item" href="help.html">Help</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html" style="font-weight: bold; color: blauw">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="login.html" style="font-weight: bold; color: blauw">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary rounded oranje blauw me-2" type="submit" style="font-weight: bold">zoeken</button>
+          </form>
+        </div>
+      </div>
+      </nav>
+
+    <header class="m-5 row">
+      <h1 class="display-2 blauw fw-bolder text-center col">Dashboard</h1>
+    </header>
+
+    <section class="row">
+        <figure class="col-md-4 text-start">
+            <a href="klanten.html">
+            <h4>KLANTEN</h4>
+            <img src="./assets/people.svg" class="img-fluid" style="width: 500px; height: 50%; background-color: #F25922;" alt="klanten" title="klanten">
+            </a>
+            <figcaption class="h6 mt-2">bootstrap icons</figcaption>
+        </figure>
+
+        <figure class="col-md-4 text-start">
+            <a href="gebruikers.html">  
+            <h4>GEBRUIKERS</h4>
+              <img src="./assets/person-lines-fill.svg" class="img-fluid" style="width: 500px; height: 50%; background-color: #8AACE0;" alt="gebruikers" title="gebruikers">
+            </a>
+            <figcaption class="h6 mt-2">bootstrap icons</figcaption>
+        </figure>
+        
+        <figure class="col-md-4 text-start">
+            <a href="media.html">
+            <h4>MEDIA</h4> 
+            <img src="./assets/collection-play.svg" class="img-fluid" style="width: 500px; height: 50%; background-color: #034959;" alt="media" title="media">
+           </a>
+            <figcaption class="h6 mt-2">bootstrap icons</figcaption>
+        </figure>
+    </section>
+
+    <section class="row">
+      <figure class="col-md-4 text-start">
+          <a href="help.html">
+          <h4>FAQ</h4>
+          <img src="./assets/question-circle.svg" class="img-fluid" style="width: 500px; height: 50%; background-color: #F25922;" alt="FAQ" title="FAQ">
+          </a>
+          <figcaption class="h6 mt-2">bootstrap icons</figcaption>
+      </figure>
+
+      <figure class="col-md-4 text-start">
+          <a href="contact.html">
+          <h4>CONTACT</h4>
+          <img src="./assets/envelope-at.svg" class="img-fluid" style="width: 500px; height: 50%; background-color: #8AACE0;" alt="contact" title="contact">
+          </a>
+          <figcaption class="h6 mt-2">bootstrap icons</figcaption>
+      </figure>
+      
+      <figure class="col-md-4 text-start">
+          <a href="login.html">
+          <h4>LOGIN</h4>
+          <img src="./assets/box-arrow-in-left.svg" class="img-fluid" style="width: 500px; height: 50%; background-color: #034959;" alt="login" title="login">
+         </a>
+          <figcaption class="h6 mt-2">bootstrap icons</figcaption>
+      </figure>
+  </section>
+  
+
+  <footer class="container-fluid text-start h6 small p-4"><span>&copy;</span> 2024 PowerDesk - Thanh - G_2SNB_A1</footer>
+  </body>
+    
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerdesk - Gebruikers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- eigen geschreven script voor de gebruikers -->
+    <script src="./js/script-gebruikers.js" defer></script>
+
+    <!-- LEAFLET -->
+    <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- voeg het mapStyleklanten.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="./css/mapStyleklanten.css" />
+    <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <!-- voeg het coordinaten.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="./js/coordinaten.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md lichtblauw">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="background-color: transparent"><img src="./assets/Logo1.png" alt="PowerDesk" width="100" height="100">
+      </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html" style="font-weight: bold; color: blauw">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold; color: blauw">
+            Diensten
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+            <li><a class="dropdown-item" href="gebruikers.html">Gebruikers</a></li>
+            <li><a class="dropdown-item" href="klanten.html">Klanten</a></li>
+            <li><a class="dropdown-item" href="tarieven.html">Tarieven</a></li>
+            <li><a class="dropdown-item" href="media.html">Media</a></li>
+            <li><a class="dropdown-item" href="help.html">Help</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="contact.html" style="font-weight: bold; color: blauw">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="login.html" style="font-weight: bold; color: blauw">Login</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+        <button class="btn btn-sm btn-outline-secondary rounded oranje blauw me-2" type="submit" style="font-weight: bold">zoeken</button>
+      </form>
+    </div>
+  </div>
+  </nav>
+  
+  <header class="m-5 row">
+    <h1 class="display-2 blauw fw-bolder text-center col">PowerDesk</h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <section id="map" class="row container-fluid">
+          <!-- in de CoordinatenMap zal er via Leaflet een map ingeladen worden -->
+          <div id="CoordinatenMap" class="col-12 mb-3"></div>
+        </section>
+
+        <article class="mb-5">
+          <h2 class="fw-bold blauw">Gebruikers</h2>
+          <p>Op de gebruikersgegevens pagina worden persoonlijke gegevens van de gebruiker weergegeven, zoals naam, adres, telefoonnummer, e-mailadres en eventuele accountinformatie. De pagina geeft een overzicht van alle belangrijke informatie die nodig is voor communicatie en identificatie van de gebruiker. Gebruikers kunnen hier ook hun gegevens wijzigen indien nodig.</p>
+        </article>
+        
+        <section id="gebruikers" class="row">
+        <!-- script laadt gebruikers in met een API, in een Bootstrap-accordion-->
+        </section>
+      </main>
+ 
+      <aside class="col-md-3 border-start ps-5">
+        <a class="navbar-brand" href="#"><img src="./assets/Ikke.png" alt="contact@powerdesk.com" width="120" height="160">
+        </a>
+        <h2 class=" text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+          <p>contact@powerdesk.com<br>
+              email : <a href="mailto:chiem-thanh.huynh@ap.be" class="donkerblauw">chiem-thanh.huynh@powerdesk.com</a><br>
+              phone +32 123 / 45 67 89</p>
+          <ul class="list-inline socials">
+            <li class="list-inline-item">
+              <a href="https://www.youtube.com" target="_blank">
+                <i class="bi bi-youtube blauw fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="bi bi-instagram blauw fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="bi bi-facebook blauw fs-3"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/" target="_blank">
+                <i class="bi bi-twitter blauw fs-3"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+ 
+    </div>
+  </div>
+
+  <footer class="container-fluid text-start h6 small p-4"><span>&copy;</span> 2024 PowerDesk - Thanh - G_2SNB_A1</footer>
+</body>
+
+
+</html>
